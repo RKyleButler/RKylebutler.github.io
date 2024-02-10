@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ronald Kyle Butler - Projects</title>
+        <link rel="stylesheet" href="../CSS/homestyle.css">
+    </head>
+    <body class="projects">
+        <header>
+            <!-- PAGE NAVIGATION -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </header>
+        <div class="core-wrapper">
+            <h1>PROJECTS</h1>
+            <section class="resume-section">
+                <h2>
+                    Resume Website<br>Feb 2024
+                </h2>
+                <p>
+                    I have moved my resume, CV, projects and references to this website to practice using HTML and CSS. I made the site multi-page to help organize it and make it easier to read; it also made the project more interesting. I have done my best to follow best standards and practices for the layout both in GUI design and coding. A fun little project to help sharpen skills, increase my visibility and better communicate what I have to offer potential employers.
+                </p>
+            </section>
+            <section class="resume-section">
+                <h2>
+                    Document Parsing<br>Raytheon<br>May 2020 - Nov 2020
+                </h2>
+                <p>
+                    I was tasked with parsing training documents for the STARS team to allow for easier storage and updating. The project was executed as a proof of concept and needed only to function at a base level.
+                </p>
+                <p class="comapany-disclosure">
+                    (since this was a project on behalf of Raytheon I can provide no pictures or other media)
+                </p>
+                <h3>
+                    My Solution:
+                </h3>
+                <p>
+                    Using the Aspose.Word library I created a C# script that parsed each section of the document. As each of these sections was parsed it was stored in an SQL database using the name of the existing file. This initial script and database once perfected were then moved to a server and made to work in tandem with a preexisting web-app framework used on a previous project for a similar purpose. With small modification I added a document uploading window and modified the existing infrastructure to recognize the new database structure.
+                </p>
+                <p>
+                    This project provided a unique challenge for me. While I have dealt with SQL databases before, I've never parsed a word document and I've never worked directly on the front end of a web-app. I was able to get through the project with unexpected ease thanks in large part to very good documentation on the part of the Aspose team, my own familiarity with the HTML structure of the windows DOCX filetype and the help of my co-workers Joey Vasquez, who helped me with the AJAX and Jquery, and Mike Gonzales, who helped me set up Microsoft SQL Server.
+                </p>
+            </section>
+            <section class="resume-section">
+                <h2>
+                    Lesson Download Improvement<br>Raytheon<br>Oct 2019 - Nov 2019
+                </h2>
+                <p>
+                    The main project's loading script was highly inefficient, needing to fully load all existing lesson resources from the server leaving developers to wait for several minutes for the loading to complete and needing to delete the unnecessary lesson resources. I, having studied the script as one of my first duties and having heard everyone complain of it, decided to fix this issue.
+                </p>
+                <p class="comapany-disclosure">
+                    (since this was a project on behalf of Raytheon I can provide no pictures or other media)
+                </p>
+                <h3>
+                    My Solution:
+                </h3>
+                <p>
+                    Using Unity's GUI scripting and consulting with my coworkers where necessary; I copied and expanded the existing loading window to allow for the loading of single lessons. I added a prompt asking for a lesson name with a text box as input which was used to make a SQL query on the server and successfully loaded only the requested lesson.
+                </p>
+                <p>
+                    The Team lead, pleased with the result requested an update to allow the lessons available on the server to be displayed for easier selection.
+                </p>
+                <h3>
+                    Improvement:
+                </h3>
+                <p>
+                    I expanded my new window eliminating the original prompt in favor of querying the server to populate a list of the lessons currently stored therein. The list elements for each lesson were given adjacent tick boxes to allow for user loading selections that were in turn stored in their own loading queue list. When the "LOAD" button was clicked every ticked lesson would be loaded from the server.
+                </p>
+                <p>
+                    As an expansion of this project; I made it possible for the system to detect existing loaded lessons in the users project directory and displayed this information in the selection list by changing the lesson name font color to CYAN. The functionality was also expanded to allow for the removal of existing lessons in the unity directory by clicking the tick boxes which changed lesson font color to RED. These RED lessons would be added to a lesson deletion list and would be removed before loading and lessons in the loading queue list.
+                </p>
+            </section>
+        </div>
+        <footer>
+            <h2>Contact:</h2>
+            <ul class="contact-style">
+                <li>El Paso, TX</li>
+                <li>(915) 373-5569 (Mobile)</li>
+                <li>rkylebutler@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/r-kyle-butler/">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

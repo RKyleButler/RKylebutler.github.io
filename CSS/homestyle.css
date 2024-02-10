@@ -1,0 +1,296 @@
+/*
+Color Palette:
+NavyBlue - #1C2833
+LghtGrey - #F5F5F5
+Teal     - #0B5345
+
+FooterVisited - #BA68C8
+FooterHover   - #fdfdfd
+
+LghtGrBl - #5D6D7E
+LghtBlue - #A9CCE3
+*/
+
+/* GLOBAL
+---------------------------------------------*/
+
+/*    BOX MODEL FIX    */
+/*
+    https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+    apply a natural box layout model to all elements, but allowing components to change
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+/*****BOX MODEL FIX*****/
+
+body {
+    display: flow-root;
+    background: #f5f5f5;
+
+    font-size: 1.6rem;
+    color: #1C2833;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.core-wrapper {
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* HEADER
+---------------------------------------------*/
+header {
+    /* position: fixed; */
+    background: #1C2833;
+    text-align: center;
+    color: #A9CCE3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header ul li {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+header a:link {
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: #A9CCE3;
+}
+header a:visited {
+    color: #A9CCE3;
+}
+header a:hover {
+    color: #ffffff;
+}
+header a:active {
+    color: #A9CCE3;
+}
+
+/* HOME
+---------------------------------------------*/
+.home {
+    display: flex;
+    flex-direction: column;
+}
+.home .core-wrapper {
+    flex: 1 0 auto;
+}
+
+.name-section {
+    padding-bottom: 20px;
+}
+
+.summary-section {
+    margin-bottom: 50px;
+}
+.summary-section a:link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #0066aa;
+}
+.summary-section a:visited {
+    /* text-decoration: none; */
+    /* font-weight: bolder; */
+    color: #0066aa;
+}
+.summary-section a:hover {
+    /* text-decoration: none; */
+    /* font-weight: bolder; */
+    color: #041b2b;
+}
+.summary-section a:active {
+    /* text-decoration: none; */
+    /* font-weight: bolder; */
+    color: #0066aa;
+}
+
+
+/* Resume
+---------------------------------------------*/
+.resume {
+    display: flex;
+    flex-direction: column;
+}
+.resume .core-wrapper {
+    flex: 1 0 auto;
+}
+
+.button-wrapper {
+    position: fixed;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+.button-wrapper p {
+    margin: 0;
+    font-weight: bolder;
+}
+.button-wrapper a {
+    background-color: #0B5345;
+    display: block;
+    box-shadow: 1px 1px 2px 1px darkgrey;
+
+    color: #A9CCE3;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.button-wrapper a:hover {
+    color: #ffffff;
+}
+
+.name-section {
+    padding-bottom: 20px;
+}
+
+.education-wrapper {
+    text-align: center;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    border-bottom: 2px dashed #67afa1;
+}
+
+.flex-container-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-item-skills {
+    flex: 200px 0 auto;
+}
+.flex-item-skills h3 {
+    text-align: center;
+}
+
+.resume-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-flex {
+    display: flex;
+}
+.company-flex h4 {
+    width: 40%;
+}
+.company-flex ul {
+    width: 60%;
+}
+.company-style {
+    font-weight: 1000;
+    color: #0B5345;
+    font-size: large;
+}
+.company-date {
+    font-style: italic;
+}
+
+/* PROJECTS
+---------------------------------------------*/
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+.projects .core-wrapper {
+    flex: 1 0 auto;
+}
+
+.comapany-disclosure {
+    font-style: italic;
+}
+
+/* REFERENCES
+---------------------------------------------*/
+.references {
+    display: flex;
+    flex-direction: column;
+}
+
+.references .core-wrapper {
+    flex: 1 0 auto;
+}
+
+.references-section {
+    margin-bottom: 70px;
+}
+
+.references-section h2 {
+    text-align: left;
+}
+.references-section h3 {
+    border-bottom: 2px dashed #67afa1;
+}
+
+.bold-label {
+    font-weight: bolder;
+}
+
+/* FOOTER
+---------------------------------------------*/
+footer {
+    background: #1C2833;
+    text-align: center;
+    color: #A9CCE3;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.contact-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-style li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer a:link {
+    text-decoration: underline;
+    color: #A9CCE3;
+}
+footer a:visited {
+    color: #BA68C8;
+}
+footer a:hover {
+    color: #fdfdfd;
+}
+footer a:active {
+    color: #A9CCE3;
+}
