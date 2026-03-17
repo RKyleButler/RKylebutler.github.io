@@ -19,7 +19,30 @@
             <h1>PROJECTS</h1>
             <section class="resume-section">
                 <h2>
-                    Resume Website<br>Feb 2024
+                    Resume Website<br>Jan 2026 - Ongoing
+                </h2>
+                <p>
+                    I've started hosting this website on a Digital Ocean droplet to pratice utilizing Linux, web hosting, server setup and hardening techniques.
+                </p>
+                <p>
+                    The site is run using Nginx as a web server and is hosted on a Ubuntu 22.04 LTS droplet. I have set up a firewall using UFW and have configured it to only allow necessary traffic to the server and have setup fail2ban to jail any naughty IP addresses. I have also set up automatic updates to ensure that the server is always running the latest security patches. I've done best best observer the priciples of least privilege and have created a separate user account for managing the website and have given it only the necessary permissions to access the files and directories needed to run the site.
+                </p>
+                <p>
+                    I've setup automatic SSL certificate generation and renewal using Certbot to ensure that the site is always secure and accessible over HTTPS. I have also set up a custom domain name for the site and configured DNS settings to point to the server's IP address.
+                </p>
+                <p>
+                    I set up a GitHub repository for the project and have configured a GitHub Actions workflow to automatically deploy any changes pushed to the main branch to the server. This allows me to easily update the site with new content and changes without having to manually upload files to the server. This was accomplished by creating a workflow that uses the SSH protocol to connect to the server and run a deployment script that pulls the latest changes from the repository and restarts the Nginx service to apply the changes.
+                </p>
+                <p>
+                    In short, it is still a very basic website with a simple design and layout, but it has been a great learning experience for me in terms of web hosting and server management. I am looking forward to continuing to improve the site and adding new features in the future.
+                </p>
+                <p>
+                    Here is a link to the <a href="https://github.com/RKyleButler/gh-deployment-workflow">resume project on github.</a> project.
+                </p>
+            </section>
+            <section class="resume-section">
+                <h2>
+                    Resume Website - Github Pages<br>Feb 2024
                 </h2>
                 <p>
                     I have moved my resume, CV, projects and references to this website to practice using HTML and CSS. I made the site multi-page to help organize it and make it easier to read; it also made the project more interesting.
