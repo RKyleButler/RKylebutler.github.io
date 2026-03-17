@@ -1,22 +1,7 @@
 https://roadmap.sh/projects/github-actions-deployment-workflow
 
-This is actually my resume website. it is a little outdated but I figure its better to use this than some "example" site. There is a base index with three subpages in a secondary folder.
+This is actually my resume website. I've been building it up though it is still missing things. I figure its better to use this than some "example" site and I can get some use out of it.
 
-root
-|
-|--------index.html  # the base landing page and resume summmary
-|
-|--------README.md
-|
-|--------Resumes/    # some resumes that may be down loaded form the site
-|
-|--------HTML/       # the subpages
-|         |----------/projects.html
-|         |----------/references.html
-|         |----------/resume.html
-|
-|--------CSS/        # the style script for the site
-|         |----------/homestyle.css
-|
-|--------.github/
-|         |----------/workflows
+It is made entirely with HTML and CSS. There is a base index with subpages in a secondary folder. Bog standard, but it doesn't need to be fancy.
+
+Sorry I deleted my file structure because posting in the first place was a little dumb of me. SECURITY FIRST AND FOREMOST!!!
